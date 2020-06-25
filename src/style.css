@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&subset=cyrillic);
+* {
+   font-family: 'Roboto', sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+ul li {
+   position: relative;
+   list-style: none;
+   padding: 8px;
+   border-radius: 5px;
+   background-color: #fff;
+   margin-bottom: 4px;
+   overflow: hidden;
+   transition-duration: 1s;
+}
+
+body {
+   background-color: #dcdde1;
+   color: #353b48;
+}
+#App {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.wrapper {
+   text-align: center;
+   width: 32%;
+   background-color: #f5f6fa;
+   border-radius: 10px;
+   padding-bottom: 25px;
+}
+.h1 {
+   color:#2f3640;
+   margin: 15px 0;
+}
+h1 span {
+   color: #61dafb;
+}
+.chatlist {
+   position: relative;
+   width: 95%;
+   height: 50%;
+   border: 1px solid #dcdde1;
+   border-radius: 15px;
+   margin: 0 auto 20px;
+   padding: 8px;
+   text-align: left;
+   overflow: auto;
+}
+
+.message-wrap {
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   width: 95%;
+}
+.new-message {
+   height: 40px;
+}
+.data-chat {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 7px;
+}
+.username {
+   font-weight: 500;
+   color:#61dafb;
+}
+.date {
+   font-size: 13px;
+   color: rgba(47, 54, 64, .4);
+   text-align: right;
+}
+label {
+   margin: 10px 0;
+   text-align: left;
+}
+input {
+   outline: none;
+}
+.button {
+   width: 50%;
+   padding: 10px 15px;
+   margin: 20px auto 0;
+   border: none;
+   border-radius: 10px;
+   outline: none;
+   font-size: 12px;
+   text-transform: uppercase;
+   background-color: #17c6f9;
+   cursor: pointer;
+   color: #fff;
+   transition: .2s;
+}
+.button:hover {
+   background-color: #61dafb;
+   transition: .2s;
+}
+
+/* УДАЛИТЬ КОММЕНТАРИЙ */
+.delete {
+   position: absolute;
+   right: 10px;
+   bottom: -17px;
+   font-size: 12px;
+   color: rgba(47, 54, 64, .5);
+   transition-duration: 0.2s;
+}
+.delete:hover {
+   cursor: pointer;
+   color: red;
+   transition-duration: 0.2s;
+}
+ul li:hover .delete {
+   right: 10px;
+   bottom: 8px;
+   transition-duration: 0.2s;
+}
